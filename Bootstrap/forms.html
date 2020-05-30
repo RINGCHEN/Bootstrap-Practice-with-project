@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form-group" action="/page.php">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" placeholder="Enter your email address" id="email">
+            <label for="pwd">Passowrd:</label>
+            <input type="password" class="form-control" placeholder="Enter your passsord" id="pwd">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div><br>
+    <div class="container">
+        <form class="form-inline" action="/page.php">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" placeholder="Enter your email address" id="email">
+            <label for="pwd">Passowrd:</label>
+            <input type="password" class="form-control" placeholder="Enter your passsord" id="pwd">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div><br>
+    <div class="container">
+        <form class="form-group" action="/page.php" class="was-validated">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" placeholder="Enter your email address" id="email" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please fill the form</div>
+            <label for="pwd">Passowrd:</label>
+            <input type="password" class="form-control" placeholder="Enter your passsord" id="pwd" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please fill the form</div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" required>Remember me
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill the form</div>
+                </label>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

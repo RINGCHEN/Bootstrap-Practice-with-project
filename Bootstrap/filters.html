@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Filters</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="form-control" id="searchBox" placeholder="Search any thing">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Cell phone</th>
+                </tr>
+            </thead>
+            <tbody id="table-content">
+                <tr>
+                    <td>Mahmood Yousaf</td>
+                    <td>Muhmmad Muzamil khan</td>
+                    <td>+923346966320</td>
+                </tr>
+                <tr>
+                    <td>Yousaf</td>
+                    <td>khan</td>
+                    <td>+923346966320</td>
+                </tr>
+                <tr>
+                    <td>Mahmood</td>
+                    <td>Muhmmad</td>
+                    <td>+923346966320</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="anything">
+            <p>Hi i am Mahmood Yousaf from Advance Computer World Platform</p>
+        </div>
+        <script>
+            $(document).ready(function(){
+              $("#searchBox").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#table-content tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
+                <script>
+                    $(document).ready(function(){
+                      $("#searchBox").on("keyup", function() {
+                        var value = $(this).val().toLowerCase();
+                        $("#anything").filter(function() {
+                          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                        });
+                      });
+                    });
+                </script>
+    </div>
+</body>
+</html>

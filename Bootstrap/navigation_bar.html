@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navigation bar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div><br>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div><br>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link1</a>
+                    <a class="dropdown-item" href="#">Link2</a>
+                    <a class="dropdown-item" href="#">Link3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+            </li>
+        </ul>
+    </div><br>
+    <div class="container">
+        <ul class="nav nav-pills bg-dark navbar-light">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  data-toggle="pill" href="#Sinup">Sinup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#Login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#About">About</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane container active" id="Home">
+                <p>This is the toggle of Home you can write any thing here</p>
+            </div>
+            <div class="tab-pane container" id="Login">
+                <h1>This is the login button</h1>
+                <button type="button" class="btn btn-primary">Login</button>
+                <p>This is the toggle of Login Form you can write any thing here</p>
+            </div>
+            <div class="tab-pane container" id="Sinup">
+                <p>This is the toggle of Sinup Form you can write any thing here</p>
+            </div>
+            <div class="tab-pane container" id="About">
+                <p>This is the toggle of About Form you can write any thing here</p>
+            </div>
+        </div>
+    </div><br>
+    <div class="container">
+        <nav class="navbar bg-dark navbar-light"    >
+            <a class="navbar-brand" href="#">
+                <img src="IMG_20191113_170410.jpg" style="width: 300px;">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sinup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link1</a>
+                        <a class="dropdown-item" href="#">Link2</a>
+                        <a class="dropdown-item" href="#">Link3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div><br><br>
+    <div class="container">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark"    >
+            <a class="navbar-brand" href="#">
+                <h3>AdvanceComputerWorld</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sinup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link1</a>
+                            <a class="dropdown-item" href="#">Link2</a>
+                            <a class="dropdown-item" href="#">Link3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

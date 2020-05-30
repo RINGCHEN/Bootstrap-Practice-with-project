@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Collapse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button data-toggle="collapse" data-target="#random" class="btn btn-primary">Click me</button>
+        <div id="random" class="collapse">
+            I write something which will be inside the button
+        </div>
+    </div>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#name">
+                        Click for show text inside it
+                    </a>
+                </div>
+                <div id="name" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        This is text inside of name id
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                     <a class="collapsed card-link" data-toggle="collapse" href="#name2">
+                        Click for show text inside id name 
+                    </a>
+                </div>
+                <div id="name2" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        This is text inside of name id
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
